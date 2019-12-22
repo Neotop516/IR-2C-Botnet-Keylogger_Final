@@ -1,0 +1,5 @@
+[Slave]
+slave_ip =Localhost
+slave_port = 6000
+master_ip= Localhost
+master_port = 5000
